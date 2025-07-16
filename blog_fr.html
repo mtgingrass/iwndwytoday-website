@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - IWNDWYToday</title>
+    <meta name="description" content="Lisez des perspectives, conseils et histoires sur la construction de meilleures habitudes et l'arrêt des mauvaises. Le blog IWNDWYToday.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Language alternates for SEO -->
+    <link rel="alternate" hreflang="en" href="https://iwndwytoday.com/blog.html" />
+    <link rel="alternate" hreflang="de" href="https://iwndwytoday.com/blog_de.html" />
+    <link rel="alternate" hreflang="fr" href="https://iwndwytoday.com/blog_fr.html" />
+    <link rel="alternate" hreflang="x-default" href="https://iwndwytoday.com/blog.html" />
+</head>
+<body>
+    <div class="language-selector">
+        <button class="language-btn" aria-expanded="false" aria-controls="language-dropdown" aria-label="Choisir la langue">
+            <span class="current-lang">🇫🇷 Français</span>
+            <span class="dropdown-arrow">▼</span>
+        </button>
+        <div id="language-dropdown" class="language-dropdown" role="listbox">
+            <a href="blog.html" class="language-option" role="option" lang="en">🇺🇸 English</a>
+            <a href="blog_de.html" class="language-option" role="option" lang="de">🇩🇪 Deutsch</a>
+            <a href="blog_fr.html" class="language-option active" role="option" lang="fr">🇫🇷 Français</a>
+        </div>
+    </div>
+
+    <header class="blog-header">
+        <div class="container">
+            <nav class="blog-nav">
+                <a href="index_fr.html" class="back-link">← Retour à IWNDWYToday</a>
+            </nav>
+            <h1>Blog</h1>
+            <p class="blog-subtitle">Perspectives, conseils et histoires sur la construction de meilleures habitudes</p>
+        </div>
+    </header>
+
+    <main class="blog-content">
+        <div class="container">
+            <div class="blog-posts">
+                <div class="blog-post-preview">
+                    <h2>Bienvenue sur le Blog IWNDWYToday</h2>
+                    <p class="post-date">Bientôt disponible</p>
+                    <p class="post-excerpt">Nous préparons du contenu réfléchi sur la formation d'habitudes, l'arrêt des mauvaises habitudes et la construction d'une relation plus saine avec vos choix quotidiens. Revenez bientôt pour nos premiers articles!</p>
+                    <div class="post-topics">
+                        <span class="topic-tag">Formation d'Habitudes</span>
+                        <span class="topic-tag">Croissance Personnelle</span>
+                        <span class="topic-tag">Pleine Conscience</span>
+                    </div>
+                </div>
+                
+                <div class="blog-placeholder">
+                    <h3>Sujets Futurs</h3>
+                    <ul>
+                        <li>La Science de la Formation d'Habitudes</li>
+                        <li>Briser le Cycle de la Honte</li>
+                        <li>Un Jour à la Fois : Le Pouvoir du Focus Présent</li>
+                        <li>Construire un Changement Durable</li>
+                        <li>Communauté et Systèmes de Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mark Gingrass. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="index_fr.html">Accueil</a>
+                    <a href="privacy_fr.html">Politique de Confidentialité</a>
+                    <a href="blog_fr.html">Blog</a>
+                    <a href="https://apps.apple.com/us/app/iwndwytoday/id6747836739" target="_blank">App Store</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language selector functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const langBtn = document.querySelector('.language-btn');
+            const langDropdown = document.querySelector('.language-dropdown');
+            
+            langBtn.addEventListener('click', function() {
+                const isExpanded = langBtn.getAttribute('aria-expanded') === 'true';
+                langBtn.setAttribute('aria-expanded', !isExpanded);
+                langDropdown.classList.toggle('show');
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.language-selector')) {
+                    langBtn.setAttribute('aria-expanded', 'false');
+                    langDropdown.classList.remove('show');
+                }
+            });
+        });
+
+        // Store language preference when user clicks language selector
+        document.querySelectorAll('.language-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const lang = this.getAttribute('lang');
+                localStorage.setItem('preferred-language', lang);
+            });
+        });
+    </script>
+</body>
+</html>

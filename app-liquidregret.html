@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Regret - Track the True Cost of Drinking</title>
+    <meta name="description" content="Liquid Regret reveals the hidden impact of alcohol on your fitness goals. Track calories, lost workouts, and health impacts to make informed decisions about drinking.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="app-pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="language-selector">
+        <button class="language-btn" aria-expanded="false" aria-controls="language-dropdown" aria-label="Choose language">
+            <span class="current-lang">🇺🇸 English</span>
+            <span class="dropdown-arrow">▼</span>
+        </button>
+        <div id="language-dropdown" class="language-dropdown" role="listbox">
+            <a href="app-liquidregret.html" class="language-option active" role="option" lang="en">🇺🇸 English</a>
+            <a href="app-liquidregret_de.html" class="language-option" role="option" lang="de">🇩🇪 Deutsch</a>
+            <a href="app-liquidregret_fr.html" class="language-option" role="option" lang="fr">🇫🇷 Français</a>
+        </div>
+    </div>
+
+    <header class="app-hero liquidregret-hero">
+        <div class="container">
+            <nav class="app-nav">
+                <a href="index.html" class="back-link">← Back to Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </nav>
+            <div class="app-hero-content">
+                <div class="app-badge">💪</div>
+                <h1 class="app-title">Liquid Regret</h1>
+                <p class="app-subtitle">See the True Cost of Drinking</p>
+                <p class="app-tagline">Transform your relationship with alcohol through fitness awareness</p>
+                <div class="app-description">
+                    <p>Discover how alcohol impacts your fitness goals, from empty calories to lost workout days. Make informed decisions about drinking by understanding its real effects on your health and performance.</p>
+                </div>
+                <div class="app-cta">
+                    <span class="coming-soon-large">Coming Soon</span>
+                    <p class="notify-text">Be the first to know when we launch</p>
+                    <form class="notify-form" id="notify-form">
+                        <input type="email" placeholder="Enter your email" class="notify-input" required>
+                        <button type="submit" class="notify-btn">Notify Me</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="app-features-section">
+        <div class="container">
+            <h2>Features That Open Your Eyes</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Calorie Reality Check</h3>
+                    <p>Track the empty calories from alcohol and see how they compare to actual meals or hours of exercise needed to burn them off.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏃‍♂️</div>
+                    <h3>Workout Impact Calculator</h3>
+                    <p>Understand how drinking affects your next-day performance, recovery time, and overall fitness progress.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Weekly Insights</h3>
+                    <p>Get personalized reports showing the cumulative impact of your drinking habits on your fitness goals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Smart Goals</h3>
+                    <p>Set realistic moderation goals and track your progress. Perfect for those who want to drink less without quitting entirely.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Alternative Suggestions</h3>
+                    <p>Discover lower-calorie drink options and mocktails that let you socialize without derailing your fitness.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Achievement System</h3>
+                    <p>Earn badges for reducing alcohol intake, choosing healthier options, and staying consistent with your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How Liquid Regret Works</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Log Your Drinks</h3>
+                    <p>Quick and easy drink logging with a comprehensive database of alcoholic beverages.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>See the Impact</h3>
+                    <p>Instantly view calories consumed, equivalent workout time, and effects on tomorrow's performance.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your weekly and monthly trends, celebrating reductions and healthier choices.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Make Better Choices</h3>
+                    <p>Armed with data, make informed decisions about when and how much to drink.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-examples">
+        <div class="container">
+            <h2>The Numbers Don't Lie</h2>
+            <p class="section-subtitle">Common drinks and their fitness impact</p>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <h3>3 Beers</h3>
+                    <div class="impact-stats">
+                        <div class="stat">
+                            <span class="stat-value">450</span>
+                            <span class="stat-label">Calories</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">45 min</span>
+                            <span class="stat-label">Running to burn</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">-20%</span>
+                            <span class="stat-label">Next day performance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="impact-card">
+                    <h3>Wine Bottle</h3>
+                    <div class="impact-stats">
+                        <div class="stat">
+                            <span class="stat-value">625</span>
+                            <span class="stat-label">Calories</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">60 min</span>
+                            <span class="stat-label">Cycling to burn</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">-30%</span>
+                            <span class="stat-label">Sleep quality</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="impact-card">
+                    <h3>4 Cocktails</h3>
+                    <div class="impact-stats">
+                        <div class="stat">
+                            <span class="stat-value">800</span>
+                            <span class="stat-label">Calories</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">2 hours</span>
+                            <span class="stat-label">Gym time to burn</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">2 days</span>
+                            <span class="stat-label">Full recovery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="detail-section">
+                    <h3>Perfect For</h3>
+                    <ul>
+                        <li>Fitness enthusiasts who drink socially</li>
+                        <li>People curious about alcohol's impact</li>
+                        <li>Those wanting to cut back, not quit</li>
+                        <li>Anyone balancing health and social life</li>
+                    </ul>
+                </div>
+                <div class="detail-section">
+                    <h3>Coming Features</h3>
+                    <ul>
+                        <li>Integration with fitness trackers</li>
+                        <li>Social accountability features</li>
+                        <li>Personalized drink recommendations</li>
+                        <li>Nutrition tracking integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-cta-section">
+        <div class="container">
+            <h2>Ready to See the Truth?</h2>
+            <p>Join the waitlist and be among the first to transform your relationship with alcohol through fitness awareness.</p>
+            <div class="cta-buttons">
+                <form class="notify-form-large" id="notify-form-bottom">
+                    <input type="email" placeholder="Enter your email" class="notify-input" required>
+                    <button type="submit" class="notify-btn">Get Early Access</button>
+                </form>
+            </div>
+            <p class="cta-note">Launching Spring 2025 • Free during beta • No spam, ever</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mark Gingrass. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="https://markgingrass.com" target="_blank">Developer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language selector functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const langBtn = document.querySelector('.language-btn');
+            const langDropdown = document.querySelector('.language-dropdown');
+            
+            langBtn.addEventListener('click', function() {
+                const isExpanded = langBtn.getAttribute('aria-expanded') === 'true';
+                langBtn.setAttribute('aria-expanded', !isExpanded);
+                langDropdown.classList.toggle('show');
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.language-selector')) {
+                    langBtn.setAttribute('aria-expanded', 'false');
+                    langDropdown.classList.remove('show');
+                }
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Handle email signup forms
+        document.querySelectorAll('.notify-form, .notify-form-large').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                // Here you would normally send this to your backend
+                alert(`Thanks! We'll notify ${email} when Liquid Regret launches.`);
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>
